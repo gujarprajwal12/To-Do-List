@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="To Do List "
+        android:textColor="@color/white"
+        android:textSize="26dp">
+
+    </TextView>
+
+     <EditText
+
+         android:id="@+id/edittext"
+         android:layout_below="@+id/textview"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="25dp"
+         android:hint="Add an Item"
+         android:textColorHint="@color/white"
+         android:textColor="@color/white">
+
+     </EditText>
+
+    <LinearLayout
+        android:id="@+id/All_Button"
+        android:layout_below="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add">
+
+        </Button>
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginLeft="30dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_marginLeft="30dp">
+
+        </Button>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_below="@id/All_Button"
+            android:text="My To Do List"
+            android:textSize="20dp"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_below="@id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:choiceMode="multipleChoice">
+
+        </ListView>
+
+   </RelativeLayout>
